@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "server": "lite-server",
-    "tcs:watch": "webpack",
-    "tcs:build": "webpack --config webpack.config.prod.js"
+    "tsc:watch": "webpack",
+    "tsc:build": "webpack --config webpack.config.prod.js"
   },
   "keywords": [],
   "author": "",
