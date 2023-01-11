@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start_server": "lite-server",
-    "webpack_watch": "webpack",
-    "webpack_build": "webpack --config webpack.config.prod.js"
+    "server": "lite-server",
+    "tcs:watch": "webpack",
+    "tcs:build": "webpack --config webpack.config.prod.js"
   },
   "keywords": [],
   "author": "",
