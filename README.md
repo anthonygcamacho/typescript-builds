@@ -16,7 +16,7 @@ NPM Install
 
 ## Node Concurrently
 
-#### Best use:
+### Best use:
 
 -   Vanilla NodeJS (no framework).
 
@@ -26,20 +26,20 @@ NPM Install
 
 ## Web Parcel
 
-Best use:
+### Best use:
 
 -   Single Page app using Vanilla JS (no framework)
 
-Reference:
+### Reference:
 
 -   [Typescript: The Complete Developer's Guide - Design Patterns with TypeScript](https://www.udemy.com/course/typescript-the-complete-developers-guide/)
 
 ## Web Webpack
 
-Best use:
+### Best use:
 
 -   Single Page app using Vanilla JS (no framework)
 
-Reference:
+### Reference:
 
 -   [Understanding TypeScript - Usine Webpack with TypeScript](https://www.udemy.com/course/typescript-the-complete-developers-guide/)
