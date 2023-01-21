@@ -1,19 +1,27 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const MatchReader_1 = require("./csvreader/composition/MatchReader");
-const CsvFileReader_1 = require("./csvreader/composition/CsvFileReader");
-const ConsoleReport_1 = require("./csvreader/reportTargets/ConsoleReport");
-const WinsAnalyzer_1 = require("./csvreader/analyzers/WinsAnalyzer");
+// import { CsvFileReader } from "./csvreader/composition/CsvFileReader"
+// import { ConsoleReport } from "./csvreader/reportTargets/ConsoleReport"
+// import { WinsAnalysis } from "./csvreader/analyzers/WinsAnalyzer"
 const Summary_1 = require("./csvreader/Summary");
+// import { HtmlReport } from "./csvreader/reportTargets/HtmlReport"
 // Inheretance
 // const reader = new MatchReader("football.csv")
 // reader.read()
-const csvFileReader = new CsvFileReader_1.CsvFileReader("football.csv");
-const matchReader = new MatchReader_1.MatchReader(csvFileReader);
+// Inistantiated
+// const csvFileReader = new CsvFileReader("football.csv")
+// const matchReader = new MatchReader(csvFileReader)
+// Static
+const matchReader = MatchReader_1.MatchReader.fromCsv("football.csv");
 matchReader.load();
-const summary = new Summary_1.Summary(new WinsAnalyzer_1.WinsAnalysis("Man United"), new ConsoleReport_1.ConsoleReport());
+// const summary = new Summary(new WinsAnalysis("Man United"), new ConsoleReport())
 // const summary = new Summary(new WinsAnalysis("Man United"), new HtmlReport())
+// summary.buildAndPrintReport(matchReader.matches)
+// Static
+const summary = Summary_1.Summary.winsAnalysisWithHtmlReport("Man United");
 summary.buildAndPrintReport(matchReader.matches);
+// ------------------------------------------------------------------------------
 // let manUnitedWins = 0
 // // Inheretance
 // // for (let match of reader.data) {

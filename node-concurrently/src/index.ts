@@ -1,22 +1,31 @@
 import { MatchReader } from "./csvreader/composition/MatchReader"
-import { CsvFileReader } from "./csvreader/composition/CsvFileReader"
-import { ConsoleReport } from "./csvreader/reportTargets/ConsoleReport"
-import { WinsAnalysis } from "./csvreader/analyzers/WinsAnalyzer"
+// import { CsvFileReader } from "./csvreader/composition/CsvFileReader"
+// import { ConsoleReport } from "./csvreader/reportTargets/ConsoleReport"
+// import { WinsAnalysis } from "./csvreader/analyzers/WinsAnalyzer"
 import { Summary } from "./csvreader/Summary"
-import { HtmlReport } from "./csvreader/reportTargets/HtmlReport"
+// import { HtmlReport } from "./csvreader/reportTargets/HtmlReport"
 
 // Inheretance
 // const reader = new MatchReader("football.csv")
 // reader.read()
 
-const csvFileReader = new CsvFileReader("football.csv")
-const matchReader = new MatchReader(csvFileReader)
+// Inistantiated
+// const csvFileReader = new CsvFileReader("football.csv")
+// const matchReader = new MatchReader(csvFileReader)
+// Static
+const matchReader = MatchReader.fromCsv("football.csv")
+
 matchReader.load()
 
-const summary = new Summary(new WinsAnalysis("Man United"), new ConsoleReport())
+// const summary = new Summary(new WinsAnalysis("Man United"), new ConsoleReport())
 // const summary = new Summary(new WinsAnalysis("Man United"), new HtmlReport())
+// summary.buildAndPrintReport(matchReader.matches)
 
+// Static
+const summary = Summary.winsAnalysisWithHtmlReport("Man United")
 summary.buildAndPrintReport(matchReader.matches)
+
+// ------------------------------------------------------------------------------
 
 // let manUnitedWins = 0
 // // Inheretance
