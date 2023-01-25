@@ -1,7 +1,5 @@
-express-advanced/node_modules
+express-with-decorators/node_modules
 express-basic/node_modules
-nestjs-01/node_modules
-nestjs-02/node_modules
 node-concurrently/node_modules
 web-parcel/node_modules
 web-parcel/.parcel-cache
