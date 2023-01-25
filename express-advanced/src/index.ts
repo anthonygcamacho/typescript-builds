@@ -1,8 +1,8 @@
 import express from "express"
-import { router } from "./routes/loginRoutes"
 import cookieSession from "cookie-session"
 import { AppRouter } from "./appRouter"
 import "./controllers//Login.controller"
+import "./controllers/Root.controller"
 
 const app = express()
 
@@ -12,7 +12,6 @@ app.use(
     })
 )
 app.use(cookieSession({ keys: ["asdfqwer"] }))
-app.use(router)
 app.use(AppRouter.getInstance())
 
 app.listen(3000, () => {
