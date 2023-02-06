@@ -1,4 +1,4 @@
-# Typescript Playground
+# Typescript Builds
 
 Different types of environment setups using TypeScript.
 
@@ -14,32 +14,28 @@ NPM Install
 > npm i
 ```
 
-## Node Concurrently
+## Builds
 
-### Best use:
+### Express Basic
 
--   Vanilla NodeJS (no framework).
+Best use: Basic setup for Express application. I would prefer to use the Express Generator.
 
-### Reference:
+Reference: [Typescript: The Complete Developer's Guide - Express + Typescript Integration](https://www.udemy.com/course/typescript-the-complete-developers-guide/)
 
--   [Typescript: The Complete Developer's Guide - More on Design Patterns](https://www.udemy.com/course/typescript-the-complete-developers-guide/)
+### Node Concurrently
 
-## Web Parcel
+Best use: Vanilla NodeJS (no framework).
 
-### Best use:
+Reference: [Typescript: The Complete Developer's Guide - More on Design Patterns](https://www.udemy.com/course/typescript-the-complete-developers-guide/)
 
--   Single Page app using Vanilla JS (no framework)
+### Web Parcel
 
-### Reference:
+Best use: Single Page app using Vanilla JS (no framework)
 
--   [Typescript: The Complete Developer's Guide - Design Patterns with TypeScript](https://www.udemy.com/course/typescript-the-complete-developers-guide/)
+Reference: [Typescript: The Complete Developer's Guide - Design Patterns with TypeScript](https://www.udemy.com/course/typescript-the-complete-developers-guide/)
 
-## Web Webpack
+### Web Webpack
 
-### Best use:
+Best use: Single Page app using Vanilla JS (no framework)
 
--   Single Page app using Vanilla JS (no framework)
-
-### Reference:
-
--   [Understanding TypeScript - Usine Webpack with TypeScript](https://www.udemy.com/course/typescript-the-complete-developers-guide/)
+Reference: [Understanding TypeScript - Usine Webpack with TypeScript](https://www.udemy.com/course/typescript-the-complete-developers-guide/)
