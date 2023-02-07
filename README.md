@@ -22,12 +22,6 @@ Best use: Basic setup for Express application. I would prefer to use the Express
 
 Reference: [Typescript: The Complete Developer's Guide - Express + Typescript Integration](https://www.udemy.com/course/typescript-the-complete-developers-guide/)
 
-### Node Concurrently
-
-Best use: Vanilla NodeJS (no framework).
-
-Reference: [Typescript: The Complete Developer's Guide - More on Design Patterns](https://www.udemy.com/course/typescript-the-complete-developers-guide/)
-
 ### Web Parcel
 
 Best use: Single Page app using Vanilla JS (no framework)
